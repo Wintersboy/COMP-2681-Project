@@ -1,0 +1,127 @@
+body {
+    background: url(images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+/* navbar */
+
+.navBar {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.navBar li {
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgb(80,80,80);
+    list-style-type: none;
+    float: left;
+    width: 315.6px;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navBar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: rgba(255, 218, 5, 0.89);
+    
+}
+
+/* Blocks */
+
+.formDiv {
+    position: absolute;
+    color: white;
+    width: 500px;
+    background-color: rgba(80,80,80, 0.7);
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    
+}
+
+.formDiv fieldset {
+    border: none;
+    padding-bottom: 40px;
+}
+
+.formDiv h1 {
+    background-color: rgb(80,80,80);
+    border-bottom: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 0;
+    padding: 10px;
+}
+
+
+/* Inputs */
+
+input[type=text], select, textarea, #phone, #email {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+}
+
+textarea {
+    text-align: left;
+    
+}
+
+label {
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+/* Buttons */
+
+button {
+    position: relative;
+    height: 75px;
+    width: 125px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(255, 218, 5);
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
