@@ -7,7 +7,7 @@
         <meta name = "description" content="Lawn maintenance company providing landscape treatments">
         <meta name="keywords" content="lawn, landscape, lawn care, lawn maintenance, mowing">
 
-        
+        <script src="javascriptFile.js"></script>
 
         <title>Home</title>
 
@@ -330,7 +330,7 @@
         </div>
 
         <div class ="lastModBut" id="lastModBut">
-            <button class="update" type="button" onclick="document.getElementById('date').innerHTML = Date()">Set Last Modified</button>
+            <button class="update" type="button" onclick="setDate()">Set Current Time</button>
         </div>
 
         <div class="footer" id="specialChar">
@@ -341,9 +341,12 @@
 
 
                 <dl id="lastMod">
-                    <dt>Last Modified</dt>
-                    <dd id="date">March 12, 2020</dd>
-        
+                    <dt>Date & Time</dt>
+                    <dd id="datetime">
+
+                        <script>
+                            setDate();
+                        </script>
                 </dl>
 
             

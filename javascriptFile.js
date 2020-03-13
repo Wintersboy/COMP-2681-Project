@@ -5,3 +5,8 @@ function validateForm() {
       return false;
     }
   } 
+
+function setDate() {
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+}  
