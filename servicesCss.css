@@ -1,0 +1,161 @@
+body {
+    background: url(images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+/* navbar */
+
+.navBar {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.navBar li {
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgb(80,80,80);
+    list-style-type: none;
+    float: left;
+    width: 315.6px;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navBar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: rgba(255, 218, 5, 0.89);
+    
+}
+
+/* Blocks */
+
+.header {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    margin: 0;
+}
+
+.services {
+    position: relative;
+    margin-top: 100px;
+   
+    
+}
+
+#headerGroup {
+    position: relative;
+    border-radius: 10px;
+    color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: rgb(80,80,80);
+    padding: 5px;
+
+}
+.services h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: rgb(80,80,80);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    
+}
+
+img + p {
+    color: white;
+    font-weight: bold;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.lawnmower, .weedwack {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    border-radius: 25px;
+}
+
+.ridingmower, .blower  {
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    border-radius: 25px;
+
+}
+
+.lawnmower, .ridingmower {
+    margin-bottom: 30px;
+}
+
+.weedwack, .blower {
+    position: relative;
+    top: 30px;
+    margin-bottom: 100px;
+}
+
+
+.lawnmower, .ridingmower, .weedwack, .blower {
+    background-color: rgba(80,80,80, 0.7);
+    border: 0.5px solid black;
+}
+
+
+/* Images */
+
+.services img {
+    display: block;
+    height: 250px;
+    width: 450px;
+    border: solid 1.5px black;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.lawnmower:hover, .ridingmower:hover, 
+.weedwack:hover, .blower:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
+    
+}
+
