@@ -1,3 +1,7 @@
+body {
+    background-color: whitesmoke;
+}
+
 img {
     display: block;
     position: relative;
@@ -5,4 +9,24 @@ img {
     width: 700px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+div > h1 {
+    text-indent: 20px;
+    border: 1px solid black;
+    background-color:gray;
+}
+
+a:not(#not) {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p {
+    
+    font-size: 1.5em;
 }

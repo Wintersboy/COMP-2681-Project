@@ -7,7 +7,7 @@
         <meta name = "description" content="Lawn maintenance company providing landscape treatments">
         <meta name="keywords" content="lawn, landscape, lawn care, lawn maintenance, mowing">
 
-        <script src="javascriptFile.js"></script>
+        <script src="deliverables/javascriptFile.js"></script>
 
         <title>Home</title>
 
@@ -16,7 +16,7 @@
 
         <style type="text/css">
             body {
-                background: url(images/background.jpg) no-repeat center center fixed; 
+                background: url(deliverables/images/background.jpg) no-repeat center center fixed; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -276,7 +276,7 @@
 
             @font-face {
                 font-family: webFont;
-                src: url(ChunkFive-Regular.otf);
+                src: url(deliverables/ChunkFive-Regular.otf);
             }
 
         </style>
@@ -289,13 +289,21 @@
         <div class="header" id="anchorReq">
             <ul class="navBar" id="listReq">
                 <li><a href="home.htm" id="anchor">Home</a></li>
-                <li><a href="services.htm">Services</a></li>
-                <li><a href="contact.htm">Contact</a></li>
-                <li><a href="crossReferencePage.htm">Cross Reference Page</a></li>
+                <li><a href="deliverables/services.htm">Services</a></li>
+                <li><a href="deliverables/contact.htm">Contact</a></li>
+                <li><a href="deliverables/crossReferencePage.htm">Cross Reference Page</a></li>
             </ul>
 
             <div class=logo>
-                <img src="images/index.jpg" alt="logo">
+                <img src="deliverables/images/index.jpg" alt="logo">
+
+                <object id="sound"> 
+                    <audio autoplay controls>
+                        <source src="deliverables/images/sound.mp3" type="audio/mp3">
+                        Your browser does not support audio.
+                    </audio>
+                </object>
+
             </div>
 
         </div>
@@ -307,7 +315,7 @@
 
             <div class="residential">
                 <h2>Residential</h2>
-                <img src="images/Residential.jpg" alt="Residential">
+                <img src="deliverables/images/Residential.jpg" alt="Residential">
                 <p>No matter the yard size or shape, we have have you covered. 
                     Your lawn will get the perfect makeover and have your 
                     neighbors wishing it was theirs.
@@ -316,7 +324,7 @@
 
             <div class="commercial">     
                 <h2>Commercial</h2>
-                <img src="images/Commercial.jpg" alt="Residential">
+                <img src="deliverables/images/Commercial.jpg" alt="Residential">
                 <p>As a business your appearance is everything, so why not start
                 with a clean cut lawn? Make your competition jealous with
                 Cam's Lawn Maintenance.
@@ -326,7 +334,7 @@
         </div>
 
         <div class="quote" id="buttonLink">
-            <button type="button" onclick = "window.location='contact.htm#formDiv';">Get a Quote Today!</button>
+            <button type="button" onclick = "window.location='deliverables/contact.htm#formDiv';">Get a Quote Today!</button>
         </div>
 
         <div class ="lastModBut" id="lastModBut">

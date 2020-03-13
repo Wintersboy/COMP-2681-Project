@@ -91,7 +91,7 @@ div {
 
 /* Inputs */
 
-input[type=text], select, textarea, #phone, #email {
+input[type=text], select, textarea, #address, #phone, #email {
     font-family: Arial, Helvetica, sans-serif;
     border: 1.5px solid black;
     border-radius: 10px;
@@ -136,7 +136,7 @@ button {
 
 /* Validations */
 
-input[type=text]:valid, #phone:valid, #email:valid {
+input[type=text]:valid, #phone:valid, #address:valid, #email:valid {
 
     background: white url(images/checkmark.png);
     background-size: 20px;
