@@ -1,75 +1,77 @@
+<!DOCTYPE html>   
 <html>
-<!DOCTYPE html>    
+    
+    <head>
+        <link href="contactCss.css" rel="stylesheet" type="text/css">
+        <script src="javascriptFile.js"></script>
 
-<head>
-    <link href="contactCss.css" rel="stylesheet" type="text/css">
+        <title>Contact</title>
+    </head>
 
-    <title>Contact</title>
-</head>
+    <body>
+        <div class="header" id="header">
 
-<body>
-    <div class="header" id="header">
-
-        <ul class = navBar id="navBar">
-            <li><a href="home.htm" id="anchor">Home</a></li>
-            <li><a href="services.htm">Services</a></li>
-            <li><a href="contact.htm">Contact</a></li>
-            <li><a href="crossReferencePage.htm">Cross Reference Page</a></li>
-        </ul>
-        
-    </div>
-
-    <div class="formDiv" id="formDiv">
-        <h1>Get a Quote!</h1>
-
-        <form>  
-            <fieldset>
-                <label for="fName">First Name:</label><br>
-                <input type="text" id="fName" name="fName" minlength="1" required><br>
-
-                <label for="lName">Last Name:</label><br>
-                <input type="text" id="lName" name="lName" minlength="1" required><br>
-
-                <label for="address">Address:</label><br>
-                <input type="text" id="tel" name="tel" minlength="1" required><br>
-
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="yardType">Yard Type:</label><br>
-                <input type="radio" id="Residential" name="yardType" value="Residential" required>
-                <label for="Residential">Residential</label>
-
-                <input type="radio" id="Commercial" name="yardType" value="Commercial" required>
-                <label for="Commercial">Commercial</label><br><br>
-
-                <label type="yardSize">Yard Size:</label><br>
-                <select name="yardSize" id="yardSize" required>
-                    <option value="default">-Select One-</option>
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="massive">Massive</option>
-                </select>
-
-                <label type="addInfo" id="addInfo"></br><h3>Additional Information:</h3></br>
-                    *Please specify additional information about your landscape
-                    such as clutter, patchy areas,</br> 
-                    animal manure, etc.*</label></br></br>
-                <textarea id="addInfo" rows="10" cols="50" placeholder="Type additional information here..." ></textarea> 
-
-            </fieldset>
+            <ul class = navBar id="navBar">
+                <li><a href="home.htm" id="anchor">Home</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="crossReferencePage.htm">Cross Reference Page</a></li>
+            </ul>
             
-            <label type="submit"></label>
-            <button type="submit" value="submit" class="btn btn-success">Submit</button>
-        </form>
+        </div>
 
-        
-    </div>
+        <div class="formDiv" id="formDiv">
+            <h1>Get a Quote!</h1>
 
-</body>
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">  
+                <fieldset>
+                    <label for="fName">First Name:</label><br>
+                    <input type="text" id="fName" name="fName" minlength="1" required><br>
+
+                    <label for="lName">Last Name:</label><br>
+                    <input type="text" id="lName" name="lName" minlength="1" required><br>
+
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="tel" name="tel" minlength="1" required><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="yardType">Yard Type:</label><br>
+                    <input type="radio" id="Residential" name="yardType" value="Residential" required>
+                    <label for="Residential">Residential</label>
+
+                    <input type="radio" id="Commercial" name="yardType" value="Commercial" required>
+                    <label for="Commercial">Commercial</label><br><br>
+
+                    <label type="yardSize">Yard Size:</label><br>
+                    <select name="yardSize" id="yardSize" required>
+                        <option value="default">-Select One-</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="massive">Massive</option>
+                    </select>
+
+                    <label type="addInfo" id="addInfo"></br><h3>Additional Information:</h3></br>
+                        *Please specify additional information about your landscape
+                        such as clutter, patchy areas,</br> 
+                        animal manure, etc.*</label></br></br>
+                    <textarea id="addInfo" rows="10" cols="50" placeholder="Type additional information here..." ></textarea> 
+
+                </fieldset>
+                
+                <label type="submit"></label>
+                <button type="submit" value="submit">Submit</button>
+                <p id="demo"></p>
+            </form>
+
+            
+        </div>
+
+    </body>
 
 </html>
