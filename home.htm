@@ -178,7 +178,8 @@
 
         .commercial img:hover, .residential img:hover {
             transition: transform 1s ease;
-            transform: scale(1.1);
+            transform: rotate(5deg);
+            
         }
 
 
@@ -207,6 +208,7 @@
             height: 70px;
             width: 150px;
         }
+
 
         #lastModBut button {
             position: relative;
@@ -325,7 +327,7 @@
         <button type="button" onclick = "window.location='contact.htm#formDiv';">Get a Quote Today!</button>
     </div>
 
-    <div id="lastModBut">
+    <div class ="lastModBut" id="lastModBut">
         <button class="update" type="button" onclick="document.getElementById('date').innerHTML = Date()">Set Last Modified</button>
     </div>
 
