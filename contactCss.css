@@ -48,6 +48,11 @@ body {
     
 }
 
+.navBar a:visited {
+    color: rgb(116, 223, 124);
+}
+
+
 /* Blocks */
 
 .formDiv {
