@@ -5,8 +5,13 @@ body {
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
+}
+
+/* Div */
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* navbar */
